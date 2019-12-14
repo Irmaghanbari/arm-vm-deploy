@@ -1,5 +1,9 @@
 # This command is used to check that particular VM size is available in that region or not
 # Get-AzComputeResourceSku | where {$_.Locations -icontains "centralus"}
+--------------------------------------------------------------------------
+# New-AzResourceGroup -Name ARM-Deployment -Location centralus
+# New-AzResourceGroupDeployment -ResourceGroupName ARM-Deployment -TemplateUri https://raw.githubusercontent.com/barimct/arm-vm-deploy/master/azuredeploy.json
+--------------------------------------------------------------------------
 
 # https://raw.githubusercontent.com/barimct/arm-vm-deploy/master/azuredeploy.json
 
